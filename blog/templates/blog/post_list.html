@@ -9,6 +9,9 @@
     <p>Info for user</p>
     {%for post in posts%}
     {{ post.title }}<br>
+    <div>
+        {{post.text}}
+    </div>
     {%endfor%}
 </body>
 </html>
