@@ -12,6 +12,7 @@ class Post(models.Model):
     published_date = models.DateTimeField(blank=True, null=True)
     image = models.ImageField(null=True, blank=True)
 
+
     def publish(self):
         self.published_date = timezone.now()
         self.save()
@@ -21,3 +22,6 @@ class Post(models.Model):
 
 
 
+class docsP(models.Model):
+    image = models.ImageField(null=True, blank=True)
+    
